@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .home {
@@ -174,6 +175,10 @@ nav li:first-child{
         font-size: 60px;
         text-align: center;
         align-items: center;
+    }
+
+    .main-nav h1{
+        font-size: 24px;
     }
 }
 

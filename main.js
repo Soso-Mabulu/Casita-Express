@@ -8,3 +8,18 @@ function hideSidebar() {
     sidebar.style.display = 'none';
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Call the loadComponent function without any clicks
+    loadComponent('aboutus.html');
+});
+
+function loadComponent(component) {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById('additionalContent').innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", component, true);
+    xhttp.send();
+}
