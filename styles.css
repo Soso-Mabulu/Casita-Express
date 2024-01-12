@@ -56,9 +56,33 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color:white;
+    color: white;
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
 
+nav a:hover {
+    color: #4CAF50; /* Change color on hover */
+    text-decoration: none;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4CAF50; /* Initial color for the line */
+    transform: scaleX(0); /* Initially, the line is not visible */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    transform: scaleX(1); /* Expand the line on hover */
+    transform-origin: bottom left;
+}
 
 nav li:first-child{
     margin-right: auto;
