@@ -9,7 +9,6 @@ function hideSidebar() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Call the loadComponent function without any clicks
     loadComponent('aboutus.html');
 });
 
