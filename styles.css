@@ -69,7 +69,6 @@ nav li:first-child{
 }
 
 
-
 .div-margin {
     padding-top: 2rem;
     padding-left: 2rem;
@@ -116,8 +115,21 @@ nav li:first-child{
     color: #4CAF50;
 }
 
+.menu-btn{
+    display: none;
+}
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
+    
+    .hideOnMobile{
+        display: none;
+    }
+    
+    .menu-btn{
+        display: block;
+    }
+
     .column {
         width: 100%;
     }
@@ -125,3 +137,10 @@ nav li:first-child{
     display: block;
     }
 }
+
+@media (max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
+
