@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+.div-margin {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.row {
+    display: flex;
+    float: left;
+    text-align: left;
+}
+.column {
+    width: 25%;
+    padding-right: 1.5rem;
+}
+.hero {
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat no-repeat;
+    text-align: left;
+    height: 100vh;
+}
+
+.hero-content {
+    padding-top: 40vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.hero-content h1 {
+    color: yellow;
+}
+.hero-content h2 {
+    color: white;
+}
+
+.hero-btn {
+    padding: 10px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.hero-btn:hover {
+    background-color: black;
+    color: #4CAF50;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+    .row {
+    display: block;
+    }
+}
