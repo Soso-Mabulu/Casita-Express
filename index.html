@@ -9,13 +9,35 @@
 </head>
 <body>
 
-        <div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))">
-            <div class="hero-content">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, natus.</h2>
-                <button class="hero-btn">Read More</button>
-            </div>
+    <nav>
+
+        <ul class="sidebar">
+            <li><a href="#" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Logo/Name</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))">
+        <div class="hero-content">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, natus.</h2>
+            <button class="hero-btn">Read More</button>
         </div>
+    </div>
         
     <div class="div-margin">
     <h1 style="margin-left: -1rem;">About Us</h1>
@@ -40,4 +62,6 @@
     </div>
     </div>
 </body>
+
+    <script src="./main.js"></script>
 </html>
