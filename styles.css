@@ -49,9 +49,6 @@ nav ul {
     align-items: center; 
 }
 
-nav li {
-    height: 50px;  
-}
 
 nav a {
     height: 100%;
@@ -120,7 +117,6 @@ nav li:first-child{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0;
 }
 
 
