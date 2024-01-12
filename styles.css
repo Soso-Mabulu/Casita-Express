@@ -33,15 +33,17 @@ nav{
     justify-content: flex-start;
     font-size: 20px;
     gap: 20px;
+    padding-top: 20px;
 }
 
-.sidebar li {
-    width: 100%;
+
+.sidebar li:first-child{
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
-.sidebar a {
-    width: 100%;
-}
 
 nav ul {
     width: 100%;
