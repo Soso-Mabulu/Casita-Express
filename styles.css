@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-
-body {
-    min-height: 100vh;
+.hero, nav{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
+
 
 .sidebar{
     position: fixed;
@@ -34,21 +34,16 @@ body {
 }
 
 
-nav {
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-
 nav ul {
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; 
 }
 
 nav li {
-    height: 50px;
+    height: 50px;  
 }
 
 nav a {
@@ -57,12 +52,9 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color:white;
 }
 
-nav :hover{
-    background-color: #f0f0f0;
-}
 
 nav li:first-child{
     margin-right: auto;
@@ -83,37 +75,36 @@ nav li:first-child{
     width: 25%;
     padding-right: 1.5rem;
 }
-.hero {
-    background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat no-repeat;
-    text-align: left;
+
+.hero{
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.hero-content {
-    padding-top: 40vh;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-.hero-content h1 {
+
+.hero h1 {
     color: yellow;
-}
-.hero-content h2 {
-    color: white;
+    font-size: 70px;
 }
 
 .hero-btn {
+    margin-top: 20px;
     padding: 10px 24px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 10px;
+    font-size: 20px;
 }
 .hero-btn:hover {
     background-color: black;
     color: #4CAF50;
 }
+
+
 
 .menu-btn{
     display: none;
