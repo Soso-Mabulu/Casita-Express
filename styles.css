@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
-.hero, nav{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+.home {
+    width: 100%; 
+    background-image: url("./images/pexels-nicu-cobasnean-19748937.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 
 .sidebar{
@@ -32,7 +37,6 @@
 .sidebar a {
     width: 100%;
 }
-
 
 nav ul {
     width: 100%;
@@ -82,11 +86,14 @@ nav li:first-child{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0;
 }
 
 
+
+
 .hero h1 {
-    color: yellow;
+    color: white;
     font-size: 70px;
 }
 
