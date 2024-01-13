@@ -9,7 +9,7 @@
     font-size: 18px;
     transition: box-shadow 0.3s ease-in-out;
     font-family: 'Arial', sans-serif;
-    animation: slideIn 1s ease-out; /* Added slide-in animation */
+    animation: slideIn 1s ease-out;
 }
 
 @keyframes slideIn {
@@ -24,7 +24,7 @@
 }
 
 .contactUs-Image {
-    align-self: center; /* Vertically align image to center */
+    align-self: center;
 }
 
 .contactUs-Image img {
@@ -37,28 +37,28 @@
 .contactUs-Content {
     max-width: 50%;
     text-align: left;
-    align-self: center; /* Vertically align content to center */
+    align-self: center;
 }
 
 .contactUs-Section h2 {
-    margin-top: 10px;  /* Adjusted margin */
+    margin-top: 10px;
     color: #333;
     transition: color 0.3s ease-in-out;
 }
 
 .contactUs-Section:hover h2 {
-    color: #4CAF50; /* Change to your desired hover color */
+    color: #4CAF50;
 }
 
 .contactUs-Section p {
     color: #666;
     transition: color 0.3s ease-in-out;
-    max-height: 100%; /* Added maximum height */
-    overflow: hidden; /* Hide overflow */
+    max-height: 100%;
+    overflow: hidden;
 }
 
 .contactUs-Section:hover p {
-    color: #888; /* Change to your desired hover color */
+    color: #888;
 }
 
 .contact-details {
@@ -67,7 +67,8 @@
 
 @media screen and (max-width: 768px) {
     .contactUs-Section {
-        grid-template-columns: 1fr; /* Updated to 1 column for smaller screens */
+        grid-template-columns: 1fr;
+        max-width: 100%;
         margin: 20px auto;
     }
 
@@ -76,7 +77,6 @@
         grid-template-columns: 1fr;
         gap: 10px;
         padding: 20px;
-        max-width: 100%;
         text-align: center;
     }
 
@@ -86,9 +86,13 @@
     }
 
     .contactUs-Image img {
-        max-width: 50%; /* Set to 50% width */
+        max-width: 100%;
         height: auto;
         border-radius: 8px;
         transition: transform 0.3s ease-in-out;
+    }
+
+    .contactUs-Content {
+        max-width: 100%;
     }
 }
