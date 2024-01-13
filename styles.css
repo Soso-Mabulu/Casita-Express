@@ -125,11 +125,9 @@ nav li:first-child{
 }
 
 
-
-
 .hero h1 {
     color: white;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 .hero-btn {
@@ -178,7 +176,7 @@ nav li:first-child{
     }
 
     .main-nav h1{
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
@@ -187,6 +185,12 @@ nav li:first-child{
         padding-top: 100px;
         position: absolute;
         width: 100%;
+        background-color: rgba(255, 255, 255, 0.459);
+        backdrop-filter: blur(10px);
+    }
+
+    .hero h1 {
+        font-size: 40px;
     }
 }
 
