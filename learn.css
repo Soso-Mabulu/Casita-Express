@@ -1,0 +1,60 @@
+/* learn.css */
+
+.learn-Section {
+    display: block;
+    gap: 30px;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    height: 100vh;
+    margin: 20px auto;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    animation: slideIn 1s ease-out; /* Added slide-in animation */
+}
+
+.learn-Section h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.learn-Section img {
+    width: 200px;
+    height: 200px; /* Set both width and height to the same value to make it square */
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.learn-Section img:hover {
+    transform: scale(1.1);
+}
+
+.learn-Section .paragraph-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.learn-Section p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.learn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
