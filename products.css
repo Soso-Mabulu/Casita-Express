@@ -109,3 +109,76 @@
         margin: 20px 0;
     }
 }
+
+/* Modal styles for Menu Image */
+
+.menu-modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    position: relative;
+    max-width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-close:hover {
+    color: #555;
+}
+
+/* Modal styles for Menu Image */
+
+.menu-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-call-to-book {
+    display: block;
+    text-align: center;
+    padding:  20px;
+    background-color: #d2d6d2;
+    color: #2c2929;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.menu-call-to-book:hover {
+    background-color: #2c2929;
+    color: #d2d6d2;
+    text-decoration: none;
+}
+
+/* Responsive styles for Menu Modal */
+@media screen and (max-width: 768px) {
+    .menu-modal-content {
+        max-width: 90%; /* Adjust the size as needed for smaller screens */
+    }
+}
