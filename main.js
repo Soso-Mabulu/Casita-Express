@@ -31,3 +31,51 @@ function loadComponent(component, targetElementId) {
     xhttp.open("GET", component, true);
     xhttp.send();
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const learnMoreButtons = document.querySelectorAll('.learn-more');
+    const closeButtons = document.querySelectorAll('.close');
+    const modals = document.querySelectorAll('.modal');
+
+    learnMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetModal = document.querySelector(button.getAttribute('data-modal-target'));
+            targetModal.style.display = 'block';
+        });
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = button.closest('.modal');
+            modal.style.display = 'none';
+        });
+    });
+
+    modals.forEach(modal => {
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const openMenuModalButton = document.getElementById('openMenuModal');
+    const closeMenuModalButton = document.getElementById('closeMenuModal');
+    const menuModal = document.getElementById('menuModal');
+
+    openMenuModalButton.addEventListener('click', function () {
+        menuModal.style.display = 'block';
+    });
+
+    closeMenuModalButton.addEventListener('click', function () {
+        menuModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target === menuModal) {
+            menuModal.style.display = 'none';
+        }
+    });
+});

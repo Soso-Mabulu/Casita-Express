@@ -1,0 +1,138 @@
+.values-and-culture {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.values-and-culture h1 {
+    text-align: center;
+    color: #111311;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.values-and-culture h1:hover{
+    color: #4CAF50;
+}
+
+.values-and-cultureInfo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.values-and-cultureInfo p {
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.values-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.values {
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* .values:hover {
+    transform: scale(1.05);
+} */
+
+.values img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.values:hover img {
+    border-color: #ff6600; /* Change to your desired hover color */
+}
+
+.product-h3 {
+    margin-top: 10px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.values:hover .product-h3 {
+    color: #4CAF50;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.values a.learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.values a.learn-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6600; /* Arrow color */
+    transform: rotate(45deg) translateX(50%);
+    transform-origin: left;
+    width: 20px;
+    height: 20px;
+}
+
+/* Add responsiveness for small screens */
+@media screen and (max-width: 768px) {
+    .values-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .values {
+        margin: 20px 0;
+    }
+    .values-and-cultureInfo p {
+        line-height: 1.6;
+        font-size: 15px;
+    }
+}

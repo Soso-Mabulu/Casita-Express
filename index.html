@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./contactUs.css">
     <link rel="stylesheet" href="./products.css">
     <link rel="stylesheet" href="./aboutUs.css">
+    <link rel="stylesheet" href="/marketing.css">
+    <link rel="stylesheet" href="/values.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
@@ -90,10 +92,136 @@
             </p>
         </div>
         <!-- Swipe Left Button with Arrow -->
-        <button class="swipe-left-button">Swipe right &rarr;</button>
+        <button class="swipe-left-button" id="openMenuModal">View Menu &rarr;</button>
+
+        <!-- Menu Modal -->
+        <div id="menuModal" class="menu-modal">
+            <div class="menu-modal-content">
+                <div  class="menu-close" id="closeMenuModal">&times;</div>
+                <img src="images/CasitaExpressManu.png" alt="Menu Image" class="menu-image">
+                <a href="#contactUs-part" class="menu-call-to-book">Call to Book</a>
+            </div>
+        </div>
 
     </div>
 
+    <!-- Values and Culture Section -->
+    <div class="values-and-culture">
+        <h1>Values and Culture</h1>
+        <div class="values-and-cultureInfo">
+            <p>
+                At Casita Express, our foundation is built upon a set of core 
+                values that guide our every endeavor and shape the vibrant 
+                organizational culture we cherish:
+            </p>
+        </div>
+        <div class="values-container">
+            <div class="values">
+                <img src="images/authenticity.jpeg" alt="Portuguese Chicken">
+                <h3 class="product-h3">Authenticity</h3>
+                <a href="#" class="learn-more" data-modal-target="#authenticity-modal">Learn More</a>
+            </div>
+            <div class="values">
+                <img src="images/exellance.jpeg" alt="Prawns, Hake, and Rissoles">
+                <h3 class="product-h3">Excellence</h3>
+                <a href="#" class="learn-more" data-modal-target="#excellence-modal">Learn More</a>
+            </div>
+            <div class="values">
+                <img src="images/Inclusivity.jpeg" alt="Pasteis de Nata">
+                <h3 class="product-h3">Inclusivity</h3>
+                <a href="#" class="learn-more" data-modal-target="#inclusivity-modal">Learn More</a>
+            </div>
+            <div class="values">
+                <img src="images/Sustainability.jpeg" alt="Calamari">
+                <h3 class="product-h3">Sustainability</h3>
+                <a href="#" class="learn-more" data-modal-target="#sustainability-modal">Learn More</a>
+            </div>
+            <div class="values">
+                <img src="images/Passion.jpeg" alt="Calamari">
+                <h3 class="product-h3">Passion</h3>
+                <a href="#" class="learn-more" data-modal-target="#passion-modal">Learn More</a>
+            </div>
+        </div>
+    
+        <!-- Modals -->
+        <div id="authenticity-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Authenticity</h2>
+                <p>We are committed to delivering an authentic taste of Portugal, from our culinary creations to the warm hospitality extended to our patrons.</p>
+            </div>
+        </div>
+    
+        <div id="excellence-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Excellence</h2>
+                <p>Striving for excellence is ingrained in our ethos. From sourcing the finest ingredients to crafting each dish, we uphold the highest standards in everything we do.</p>
+            </div>
+        </div>
+    
+        <div id="inclusivity-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Inclusivity</h2>
+                <p>Casita Express is a melting pot of cultures, welcoming guests from all walks of life. We embrace diversity, fostering an inclusive environment where everyone feels at home.</p>
+            </div>
+        </div>
+    
+        <div id="sustainability-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Sustainability</h2>
+                <p>Mindful of our impact, we actively pursue sustainable practices, from sourcing locally to minimizing our environmental footprint, contributing to a healthier planet.</p>
+            </div>
+        </div>
+    
+        <div id="passion-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Passion</h2>
+                <p>The passion for Portuguese cuisine drives us. It's the secret ingredient that infuses every dish with love and dedication, creating an unforgettable dining experience.</p>
+            </div>
+        </div>
+    
+
+        <div class="values-and-cultureInfo">
+            <p>
+                Our organizational culture is a celebration of 
+                these values, creating a collaborative and empowering 
+                atmosphere where our team is encouraged to innovate, 
+                learn, and grow. Casita Express is more than a 
+                restaurant; it's a culinary journey where our values 
+                and culture come together to create an extraordinary 
+                dining experience.
+            </p>
+        </div>
+
+    </div>
+
+    
+    <!-- Marketing Section -->
+
+    <div class="marketing-Section">
+        <div>
+            <h1>Digital Presence & Marketing</h1>
+        </div>
+        <div>
+            <img src="images/chickenWings.jpg" alt="Chicken Wings">
+        </div>
+
+        <div class="paragraph-container">
+            <p>Casita Express embraces a dynamic digital presence to connect with our patrons and share the 
+                essence of our culinary offerings. Follow us on Instagram (<a href="https://www.instagram.com/casita_express_jhb/" target="_blank">@casita_express_jhb</a>) for a visual feast 
+                of our delicious dishes, special promotions, and behind-the-scenes moments. Additionally, our 
+                strategic presence on Google ensures that you easily discover us when searching for an authentic 
+                Portuguese dining experience. Engage with our local community through targeted advertisements 
+                on relevant WhatsApp groups, where we share updates, exclusive deals, and invite everyone 
+                to savor the flavors of Portugal at Casita Express.
+            </p>
+        </div>
+    </div>
+    
     <!-- Contact Us Section -->
     <div id="contactUs-part" class="contactUs-Section">
         <div class="contactUs-Image">
