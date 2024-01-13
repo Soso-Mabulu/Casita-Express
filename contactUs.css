@@ -40,6 +40,7 @@
     align-self: center;
 }
 
+
 .contactUs-Section h2 {
     margin-top: 10px;
     color: #333;
@@ -50,7 +51,16 @@
     color: #4CAF50;
 }
 
+.contactUs-Section h4 {
+    margin-top: 20px;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+    font-size: 20px;
+    text-align: center;
+}
+
 .contactUs-Section p {
+    margin-top: 30px;
     color: #666;
     transition: color 0.3s ease-in-out;
     max-height: 100%;
