@@ -1,29 +1,31 @@
 /* learn.css */
 
 .learn-Section {
-    display: block;
+    display: flex; /* Use flex for better responsiveness */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     text-align: center;
     padding: 20px;
-    max-width: 100%;
-    height: 100vh;
+    max-width: 800px; /* Set a specific max-width for better readability on larger screens */
     margin: 20px auto;
-    font-size: 18px;
+    font-size: 20px; /* Slightly larger font size for better readability */
     transition: box-shadow 0.3s ease-in-out;
     font-family: 'Arial', sans-serif;
     animation: slideIn 1s ease-out; /* Added slide-in animation */
 }
 
-.learn-Section h1 {
-    text-align: center;
+.learn-Section h2 {
     color: #333;
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 550;
+    margin: 20px;
 }
 
 .learn-Section img {
-    width: 200px;
-    height: 200px; /* Set both width and height to the same value to make it square */
+    max-width: 100%; /* Make images responsive */
+    height: auto;
     border-radius: 50%;
     margin-top: 20px;
     transition: transform 0.3s ease-in-out;
@@ -34,17 +36,17 @@
 }
 
 .learn-Section .paragraph-container {
-    background-color: #ffffff;
+    background-color: #f9f9f9; /* Use a slightly off-white background */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Increased border-radius for a softer look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased box-shadow for a subtle lift */
     margin-top: 20px;
-    text-align: left;
+    text-align: justify; /* Use justified text for a cleaner look */
 }
 
 .learn-Section p {
     color: #666;
-    font-size: 16px;
+    font-size: 18px; /* Slightly larger font size for better readability */
     line-height: 1.8;
     margin: 0;
 }
@@ -53,8 +55,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     margin-top: 20px;
     max-width: 800px;
     margin: 20px auto;
+}
+@media  screen and (max-width: 768px) {
+
+    p{
+        font-size: 15px;
+    }
+    
 }

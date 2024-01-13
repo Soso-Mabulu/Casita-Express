@@ -106,3 +106,41 @@
         max-width: 100%;
     }
 }
+
+
+/* footer Styles  */
+/* Add the following styles to your existing CSS file */
+
+footer {
+    background-color: #b7b7b7; /* Choose a background color for the footer */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust the size of social icons as needed */
+    height: 40px;
+    border-radius: 50%;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    font-size: 14px;
+}
