@@ -1,0 +1,80 @@
+/* Base styles for larger screens */
+.leadership-section {
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.leadership-heading {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.leader img {
+    max-width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.leader h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.leader p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.leadership-summary {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .leadership-section {
+        width: 80%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .leadership-heading {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .leader img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .leader h2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .leader p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
