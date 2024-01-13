@@ -18,7 +18,7 @@ nav{
 }
 
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -32,17 +32,26 @@ nav{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 600;
     gap: 20px;
     padding-top: 20px;
+    color: white; /* Set text color to white */
 }
 
-
-.sidebar li:first-child{
+.sidebar li:first-child {
     margin-top: 20px;
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.sidebar a {
+    /* Apply backdrop-filter to blur text */
+    backdrop-filter: blur(5px);
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 
@@ -125,11 +134,9 @@ nav li:first-child{
 }
 
 
-
-
 .hero h1 {
     color: white;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 .hero-btn {
@@ -178,13 +185,21 @@ nav li:first-child{
     }
 
     .main-nav h1{
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 400px) {
     .sidebar{
+        padding-top: 100px;
+        position: absolute;
         width: 100%;
+        background-color: rgba(255, 255, 255, 0.322);
+        backdrop-filter: blur(10px);
+    }
+
+    .hero h1 {
+        font-size: 40px;
     }
 }
 
