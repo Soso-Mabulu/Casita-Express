@@ -112,6 +112,10 @@
 
 /* Modal styles for Menu Image */
 
+.menu-modal {
+    display: none;
+}
+
 .menu-modal-content {
     background-color: #fefefe;
     margin: 0 auto;
@@ -121,6 +125,9 @@
     position: relative;
     max-width: 80%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-modal-content.fadeIn {
     animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -134,7 +141,6 @@
         transform: translateY(0);
     }
 }
-
 
 .menu-close {
     position: absolute;
