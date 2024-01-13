@@ -1,11 +1,16 @@
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'flex';
+    const menuBtn = document.querySelector('.menu-btn');
+    menuBtn.style.display = 'none';
+    
 }
 
 function hideSidebar() {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
+    const menuBtn = document.querySelector('.menu-btn');
+    menuBtn.style.display = 'flex';
 }
 
 document.addEventListener("DOMContentLoaded", function() {
