@@ -35,7 +35,8 @@ nav{
     font-size: 15px;
     font-weight: 600;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-left: 10px;
     color: white; /* Set text color to white */
 }
 
@@ -47,11 +48,20 @@ nav{
 }
 
 .sidebar a {
-    /* Apply backdrop-filter to blur text */
+    position: relative; /* Add position relative to create a stacking context */
+    display: inline-block; /* Display as inline-block for better positioning */
+    padding: 10px 15px;
+    border-radius: 5px; /* Add border-radius for a rounded look */
     backdrop-filter: blur(5px);
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover effect on links */
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
+    color: #00ff1e; /* Change text color on hover */
 }
 
 
@@ -136,21 +146,23 @@ nav li:first-child{
 
 .hero h1 {
     color: white;
-    font-size: 40px;
+    font-size: 60px;
+    font-weight: 550;
 }
 
 .hero-btn {
     margin-top: 20px;
     padding: 10px 24px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #c1c1c1;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 10px;
     font-size: 20px;
+    font-weight: 550;
 }
 .hero-btn:hover {
-    background-color: black;
-    color: #4CAF50;
+    background-color: rgb(0, 0, 0);
+    color: #9eaf9e;
 }
 
 
@@ -179,9 +191,10 @@ nav li:first-child{
 
     .hero h1 {
         color: white;
-        font-size: 60px;
+        font-size: 55px;
         text-align: center;
         align-items: center;
+        padding-bottom: 30px;
     }
 
     .main-nav h1{

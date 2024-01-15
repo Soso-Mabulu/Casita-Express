@@ -38,11 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const modals = document.querySelectorAll('.modal');
 
     learnMoreButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', (event) => {
+            // Prevent the default behavior of the anchor tag
+            event.preventDefault();
+    
             const targetModal = document.querySelector(button.getAttribute('data-modal-target'));
             targetModal.style.display = 'block';
         });
-    });
+    })
 
     closeButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -76,6 +79,34 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('click', function (event) {
         if (event.target === menuModal) {
             menuModal.style.display = 'none';
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const heroButton = document.getElementById('heroBtn');
+
+    heroButton.addEventListener('click', function () {
+        // Get the target element by ID
+        const targetElement = document.getElementById('aboutUs');
+
+        // Scroll to the target element
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const contactUsButton = document.getElementById('contactUsBtn');
+
+    contactUsButton.addEventListener('click', function () {
+        // Get the target element by ID
+        const targetElement = document.getElementById('contactUs-part');
+
+        // Scroll to the target element
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
         }
     });
 });

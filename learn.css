@@ -26,13 +26,13 @@
 .learn-Section img {
     max-width: 100%; /* Make images responsive */
     height: auto;
-    border-radius: 50%;
+    border-radius: 50px;
     margin-top: 20px;
     transition: transform 0.3s ease-in-out;
 }
 
 .learn-Section img:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
 
 .learn-Section .paragraph-container {
