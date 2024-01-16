@@ -78,9 +78,8 @@
 
     <div class="home">
         <nav>
-
             <ul class="sidebar">
-                <li><a href="#" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" class="close" height="24" viewBox="0 -960 960 960" width="24" style="fill: white;"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" class="close" height="24" viewBox="0 0 512 512" width="24" style="fill: black;"><path d="M503.69 9.37c-18.75-18.74-49.14-18.75-67.88 0L256 188.12 75.19 9.37C56.45-9.37 26.06-9.36 7.31 9.37c-18.75 18.74-18.75 49.14 0 67.88L188.11 256 7.31 436.73c-18.75 18.74-18.75 49.14 0 67.88 9.37 9.37 21.65 14.06 33.94 14.06s24.57-4.69 33.94-14.06L256 323.88 436.81 503.63c9.37 9.37 21.65 14.06 33.94 14.06s24.57-4.69 33.94-14.06c18.75-18.74 18.75-49.14 0-67.88L323.89 256l180.81-180.73c18.74-18.74 18.74-49.15 0-67.88z"/></svg></a></li>
                 <li><a href="#aboutUs">ABOUT US</a></li>
                 <li><a href="#contactUs-part">CONTACT</a></li>
                 <li><a href="#learnMore">MORE INFO</a></li>
@@ -88,7 +87,10 @@
             </ul>
     
             <ul class="main-nav">
-                <li><h1 href="#" >CASITA EXPRESS</h1></li>
+                <li>
+                    <!-- Rounded logo image -->
+                    <img src="/icons/companyLogo.jpg" alt="Casita Express Logo" class="navLogoImage"> CASITA EXPRESS </a>
+                </li>
                 <li><a href="#aboutUs" class="hideOnMobile">ABOUT US</a></li>
                 <li><a href="#contactUs-part" class="hideOnMobile">CONTACT</a></li>
                 <li><a href="#learnMore" class="hideOnMobile">MORE INFO</a></li>
@@ -97,8 +99,9 @@
             </ul>
         </nav>
         
-        <div class="hero">
-    
+        <div class="hero" id="home">
+            <!-- Add the logo image -->
+            <img src="/icons/companyLogo.jpg" alt="Soso Unplugged Logo" class="rounded-logo masthead-logo">
             <h1>A TASTE OF PORTUGUESE</h1>
             <button class="hero-btn" id="heroBtn" >Learn More</button>
         </div>

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,17 +6,23 @@
 }
 
 .home {
-    width: 100%; 
-    background-image: url("./images/pexels-nicu-cobasnean-19748937.jpg");
+    width: 100%;
+    background-image: url("./images/home-background.jpeg");
     background-position: center;
     background-repeat: no-repeat;
+    box-sizing: border-box;
     background-size: cover;
+    padding-bottom: 30px;
 }
 
-nav{
+nav {
     padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
 
 .sidebar {
     position: fixed;
@@ -25,8 +31,8 @@ nav{
     height: 100vh;
     width: 300px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2); /* Updated to black */
+    backdrop-filter: blur(20px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
@@ -35,9 +41,9 @@ nav{
     font-size: 15px;
     font-weight: 600;
     gap: 20px;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-left: 10px;
-    color: white; /* Set text color to white */
+    color: white;
 }
 
 .sidebar li:first-child {
@@ -48,20 +54,19 @@ nav{
 }
 
 .sidebar a {
-    position: relative; /* Add position relative to create a stacking context */
-    display: inline-block; /* Display as inline-block for better positioning */
-    padding: 10px 15px;
-    border-radius: 5px; /* Add border-radius for a rounded look */
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
     backdrop-filter: blur(5px);
     color: white;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Hover effect on links */
 .sidebar a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
-    color: #00ff1e; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #00ff1e;
 }
 
 
@@ -70,13 +75,19 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    align-items: center; 
+    align-items: center;
 }
 
+.navLogoImage {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
 
 nav a {
     height: 100%;
-    padding: 0 30px;
+    padding: 0 15px; /* Added padding */
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -86,14 +97,14 @@ nav a {
 }
 
 nav h1 {
-    padding: 0 30px;
+    padding: 0 15px; /* Added padding */
     align-items: center;
     color: white;
     font-size: 30px;
 }
 
 nav a:hover {
-    color: #4CAF50; /* Change color on hover */
+    color: #4CAF50;
     text-decoration: none;
 }
 
@@ -104,45 +115,61 @@ nav a::before {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #4CAF50; /* Initial color for the line */
-    transform: scaleX(0); /* Initially, the line is not visible */
+    background-color: #4CAF50;
+    transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease-in-out;
 }
 
 nav a:hover::before {
-    transform: scaleX(1); /* Expand the line on hover */
+    transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-nav li:first-child{
+nav li:first-child {
     margin-right: auto;
 }
-
 
 .div-margin {
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
 .row {
     display: flex;
     float: left;
     text-align: left;
 }
+
 .column {
     width: 25%;
     padding-right: 1.5rem;
 }
 
-.hero{
+.rounded-logo {
+    width: 190px;
+    height: 190px;
+    border-radius: 50px;
+    margin-bottom: 4rem; /* Improve spacing between image and heading */
+    border: 2px solid #fff;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow to the logo */
+    background-color: black;
+}
+
+li {
+    color: white;
+    font-weight: 550;
+}
+
+.hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
 
 .hero h1 {
     color: white;
@@ -160,33 +187,31 @@ nav li:first-child{
     font-size: 20px;
     font-weight: 550;
 }
+
 .hero-btn:hover {
     background-color: rgb(0, 0, 0);
     color: #9eaf9e;
 }
 
-
-
-.menu-btn{
+.menu-btn {
     display: none;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-    
-    .hideOnMobile{
+    .hideOnMobile {
         display: none;
     }
-    
-    .menu-btn{
+
+    .menu-btn {
         display: block;
     }
 
     .column {
         width: 100%;
     }
+
     .row {
-    display: block;
+        display: block;
     }
 
     .hero h1 {
@@ -197,13 +222,13 @@ nav li:first-child{
         padding-bottom: 30px;
     }
 
-    .main-nav h1{
+    .main-nav h1 {
         font-size: 20px;
     }
 }
 
 @media (max-width: 400px) {
-    .sidebar{
+    .sidebar {
         padding-top: 100px;
         position: absolute;
         width: 100%;
@@ -215,4 +240,3 @@ nav li:first-child{
         font-size: 40px;
     }
 }
-
