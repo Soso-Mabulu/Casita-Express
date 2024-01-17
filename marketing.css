@@ -39,6 +39,7 @@
     transition: transform 0.3s ease-in-out;
 }
 
+
 .marketing-Section img:hover {
     transform: scale(1.1);
 }
@@ -66,4 +67,11 @@
     flex-direction: column; /* Stack elements vertically */
     margin: 20px auto; /* Remove the duplicated margin property */
     max-width: 800px;
+}
+
+.marketing-Section video {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    margin-top: 30px;
 }
