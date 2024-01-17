@@ -41,14 +41,15 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', (event) => {
             // Prevent the default behavior of the anchor tag
             event.preventDefault();
-    
             const targetModal = document.querySelector(button.getAttribute('data-modal-target'));
             targetModal.style.display = 'block';
         });
     })
 
     closeButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', (event) => {
+            // Prevent the default behavior of the anchor tag
+            event.preventDefault();
             const modal = button.closest('.modal');
             modal.style.display = 'none';
         });
