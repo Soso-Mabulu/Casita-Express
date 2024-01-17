@@ -240,3 +240,835 @@ li {
         font-size: 40px;
     }
 }
+
+/* About.css */
+.aboutUs-Section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    animation: slideIn 1s ease-out; /* Added slide-in animation */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.aboutUs-Image {
+    align-self: center; /* Vertically align image to center */
+}
+
+.aboutUs-Image img {
+    max-width: 100%;
+    height: 300px;
+    width: 270px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.aboutUs-Image:hover img {
+    transform: scale(1.04);
+}
+
+.aboutUs-Content {
+    text-align: left;
+}
+
+.aboutUs-Section h2 {
+    margin-top: 90px;
+    padding-top: 40px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.aboutUs-Section:hover h2 {
+    padding-top: 40px;
+    color: #4CAF50; /* Change to your desired hover color */
+}
+
+.aboutUs-Section p {
+    color: #666;
+    transition: color 0.3s ease-in-out;
+}
+
+.aboutUs-Section:hover p {
+    color: #888; /* Change to your desired hover color */
+}
+
+.contactUs-Button {
+    display: block;
+    margin: 40px auto;
+    padding: 10px 20px;
+    background-color: #000000; /* Change to your desired button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contactUs-Button:hover {
+    background-color: #4CAF50; /* Change to your desired hover button color */
+}
+
+@media screen and (max-width: 768px) {
+    .aboutUs-Section {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutUs-Section {
+        display: block;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .aboutUs-Section h2,
+    .aboutUs-Section p {
+        text-align: center;
+    }
+
+    .aboutUs-Image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+
+/* Values  */
+.values-and-culture {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.values-and-culture h1 {
+    text-align: center;
+    color: #111311;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.values-and-culture h1:hover{
+    color: #4CAF50;
+}
+
+.values-and-cultureInfo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.values-and-cultureInfo p {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.values-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.values {
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* .values:hover {
+    transform: scale(1.05);
+} */
+
+.values img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.values:hover img {
+    border-color: #ff6600; /* Change to your desired hover color */
+}
+
+.product-h3 {
+    margin-top: 10px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.values:hover .product-h3 {
+    color: #4CAF50;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.values a.learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.values a.learn-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ff6600; /* Arrow color */
+    transform: rotate(45deg) translateX(50%);
+    transform-origin: left;
+    width: 20px;
+    height: 20px;
+}
+
+/* Add responsiveness for small screens */
+@media screen and (max-width: 768px) {
+    .values-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .values {
+        margin: 20px 0;
+    }
+    .values-and-cultureInfo p {
+        line-height: 1.6;
+        font-size: 15px;
+    }
+}
+
+/* Products  */
+
+
+.ProductService-section {
+    max-width: 1450px;
+    margin: 7px auto;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+.product-h1 {
+    text-align: center;
+    color: #121312;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product {
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.product:hover img {
+    border-color: #ff6600; /* Change to your desired hover color */
+}
+
+.product-h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.product:hover .product-h3 {
+    color: #4CAF50;
+}
+
+.ProductDescription {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ProductDescription p {
+    line-height: 1.6;
+    color: #555; /* Slightly different color for better contrast */
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    padding: 20px; /* Add some padding for better visual appeal */
+    border-radius: 8px; /* Add rounded corners for a softer look */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.ProductDescription p:hover {
+    background-color: white; /* Change to a slightly different background color on hover */
+}
+
+.swipe-left-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #e0e5e1;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    font-weight: bold;
+}
+
+.swipe-left-button:hover {
+    background-color: #000000; /* Change to your desired hover button color */
+    color: #e0e5e1;
+}
+
+@media screen and (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        margin: 20px 0;
+    }
+}
+
+/* Modal styles for Menu Image */
+
+.menu-modal {
+    display: none;
+}
+
+.menu-modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    position: relative;
+    max-width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-modal-content.fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-close:hover {
+    color: #555;
+}
+
+/* Modal styles for Menu Image */
+
+.menu-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-call-to-book {
+    display: block;
+    text-align: center;
+    padding:  20px;
+    background-color: #d2d6d2;
+    color: #2c2929;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.menu-call-to-book:hover {
+    background-color: #2c2929;
+    color: #d2d6d2;
+    text-decoration: none;
+}
+
+/* Responsive styles for Menu Modal */
+@media screen and (max-width: 768px) {
+    .menu-modal-content {
+        max-width: 90%; /* Adjust the size as needed for smaller screens */
+    }
+}
+
+
+/* Marketing  */
+
+/* marketing.css */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.marketing-Section {
+    display: block;
+    gap: 30px;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    margin: 20px auto;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    animation: slideIn 1s ease-out; /* Added slide-in animation */
+}
+
+.marketing-Section h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.marketing-Section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.marketing-Section img:hover {
+    transform: scale(1.1);
+}
+
+.marketing-Section .paragraph-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.marketing-Section p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+    text-align: center;
+}
+
+.marketing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    margin: 20px auto; /* Remove the duplicated margin property */
+    max-width: 800px;
+}
+
+.marketing-Section video {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+/* Learn css */
+
+/* learn.css */
+
+.learn-Section {
+    display: flex; /* Use flex for better responsiveness */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px; /* Set a specific max-width for better readability on larger screens */
+    margin: 20px auto;
+    font-size: 20px; /* Slightly larger font size for better readability */
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    animation: slideIn 1s ease-out; /* Added slide-in animation */
+}
+
+.learn-Section h2 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 550;
+    margin: 20px;
+}
+
+.learn-Section img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.learn-Section img:hover {
+    transform: scale(1.04);
+}
+
+.learn-Section .paragraph-container {
+    background-color: #f9f9f9; /* Use a slightly off-white background */
+    padding: 20px;
+    border-radius: 12px; /* Increased border-radius for a softer look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased box-shadow for a subtle lift */
+    margin-top: 20px;
+    text-align: justify; /* Use justified text for a cleaner look */
+}
+
+.learn-Section p {
+    color: #666;
+    font-size: 18px; /* Slightly larger font size for better readability */
+    line-height: 1.8;
+    margin: 0;
+}
+
+.learn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+@media  screen and (max-width: 768px) {
+
+    p{
+        font-size: 15px;
+    }
+    
+}
+
+/* Leadership.css */
+
+/* Base styles for larger screens */
+.leadership-section {
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.leadership-heading {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.leader img {
+    max-width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.leader h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.leader p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.leadership-summary {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .leadership-section {
+        width: 80%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .leadership-heading {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .leader img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .leader h2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .leader p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Contact.css */
+
+.contactUs-Section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+    max-width: 100%;
+    height: 100vh;
+    margin: 20px auto;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contactUs-Image {
+    align-self: center;
+}
+
+.contactUs-Image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contactUs-Content {
+    max-width: 50%;
+    text-align: left;
+    align-self: center;
+}
+
+
+.contactUs-Section h2 {
+    margin-top: 10px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.contactUs-Section:hover h2 {
+    color: #4CAF50;
+}
+
+.contactUs-Section h4 {
+    margin-top: 20px;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contactUs-Section p {
+    margin-top: 30px;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.contactUs-Section:hover p {
+    color: #888;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contactUs-Section {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .contactUs-Section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contactUs-Section h2,
+    .contactUs-Section p {
+        text-align: center;
+    }
+
+    .contactUs-Image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .contactUs-Content {
+        max-width: 100%;
+    }
+}
+
+
+/* footer Styles  */
+/* Add the following styles to your existing CSS file */
+
+footer {
+    background-color: #efeded; /* Choose a background color for the footer */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust the size of social icons as needed */
+    height: 40px;
+    border-radius: 50%;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    font-size: 14px;
+}
+
