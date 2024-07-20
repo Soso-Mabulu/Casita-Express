@@ -3,40 +3,1691 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>403 Forbidden</title>
+    <meta name="description" content="Casita Express - A taste of authentic Portuguese cuisine in Johannesburg, South Africa.">
+    <meta name="keywords" content="Casita Express, Portuguese Cuisine, Johannesburg, Dining, Restaurant">
+    <meta name="author" content="Muhammad Omar">
+
+    <!-- Add structured data for rich snippets -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "name": "Casita Express",
+          "url": "https://www.casitaexpress.com",
+          "image": "https://www.casitaexpress.com/images/logo.png",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "38 Greenhill Road",
+            "addressLocality": "Emmarentia",
+            "addressRegion": "Johannesburg",
+            "postalCode": "2195",
+            "addressCountry": "ZA"
+          },
+          "telephone": "+27 73 606 0987",
+          "sameAs": [
+            "https://web.facebook.com/CasitaExpress",
+            "https://www.instagram.com/casita_express_jhb/",
+            "https://www.mrdfood.com/food-delivery/restaurant/casita-express-emmarentia-emmarentia/21504"
+          ]
+        }
+    </script>
+
+    <title>CASITA EXPRESS</title>
+
+    <link rel="icon" href="icons/logo.png" type="image/png">
+    <link rel="shortcut icon" type="image/png" href="icons/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        @media  screen and (max-width: 768px) {
+
+            p{
+                font-size: 15px;
+            }
+            .learn-container p{
+                font-size: 15px;
+            }
+            .values-and-cultureInfo p{
+                font-size: 15px;
+            }
+            .values-and-culture p{
+                font-size: 15px;
+            }
+            .ProductDescription p{
+                font-size: 15px;
+            }
+            .paragraph-container p{
+                font-size: 15px;
+            }
+            .contactUs-Content h2{
+                font-size: 16px;
+            }
+        }
+        .marketing-Section video {
+            width: 350px;
+            height: 350px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        /* Updated Styles for a More Appealing Look */
+        .more-amazing-dishes {
+            position: relative;
+            height: 100vh; /* Adjust the height as needed */
+            background-image: url('/images/MoreLogoImage.png');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            
+        }
+
+        /* Dark overlay to enhance background image */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)); /* Linear gradient for a smoother transition */
+        }
+
+        .carousel-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%; /* Adjust the width as needed */
+        }
+
+        /* Updated Blob Styles for a More Intriguing Shape and Placement */
+        .blob {
+            width: 365px;
+            height: 365px;
+            border-radius: 50% 25% 45% 25% / 30% 20% 40% 20%;
+            box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8); /* Increased shadow for a more pronounced effect */
+            position: relative;
+            left: 10%; /* Adjust the percentage as needed */
+        }
+
+        /* Professional and Characterized Dish Title */
+        .dish-title {
+            text-align: center;
+            font-size: 32px; /* Larger font size for a more prominent title */
+            margin-top: 30px; /* Adjusted margin for more space */
+            font-family: 'Roboto', sans-serif; /* Example: Use a professional font-family */
+            color: #fff; /* White text for better contrast */
+            letter-spacing: 2px; /* Added letter-spacing for clarity */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle text shadow for emphasis */
+        }
+        .dish-title-small {
+            text-align: center;
+            font-size: 20px; /* Larger font size for a more prominent title */
+            margin-top: 30px; /* Adjusted margin for more space */
+            font-family: 'Roboto', sans-serif; /* Example: Use a professional font-family */
+            color: #fff; /* White text for better contrast */
+            letter-spacing: 2px; /* Added letter-spacing for clarity */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle text shadow for emphasis */
+        }
+
+        .more-h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .dish-description {
+            text-align: center;
+            font-size: 17px;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .more-product-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .more-product {
+            text-align: center;
+            margin: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .more-product:hover {
+            transform: scale(1.05);
+        }
+
+        .more-product img {
+            border-radius: 50px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #4CAF50;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+
+        /* Media query for screens smaller than 768px */
+        @media (max-width: 768px) {
+            .carousel-container {
+                width: 90%; /* Adjusted width for smaller screens */
+            }
+
+            .blob {
+                width: 250px; /* Adjusted blob size for smaller screens */
+                height: 250px;
+            }
+
+            .dish-title {
+                font-size: 20px; /* Adjusted font size for smaller screens */
+                margin-top: 20px;
+            }
+
+            .dish-title-small {
+                font-size: 15px; /* Adjusted font size for smaller screens */
+                margin-top: 20px;
+            }
+
+            .more-h1 {
+                font-size: 24px; /* Adjusted font size for smaller screens */
+                margin-bottom: 20px;
+            }
+
+            .dish-description {
+                font-size: 14px; /* Adjusted font size for smaller screens */
+                margin-top: 10px;
+            }
+
+            .more-product img {
+                border-radius: 50px;
+                width: 90px;
+                height: 90px;
+                object-fit: cover;
+                border: 3px solid #4CAF50;
+                transition: border-color 0.3s ease-in-out;
+            }
+
+            .more-product-container {
+                margin-top: 5px;
+            }
+            
+        }
+
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .home {
+            width: 100%;
+            background-image: url("./images/home-background.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            background-size: cover;
+            padding-bottom: 30px;
+        }
+
+        nav {
+            padding-top: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
             height: 100vh;
+            width: 300px;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.2); /* Updated to black */
+            backdrop-filter: blur(20px);
+            box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            font-size: 15px;
+            font-weight: 600;
+            gap: 20px;
+            padding-top: 50px;
+            padding-left: 10px;
+            color: white;
+        }
+
+        .sidebar li:first-child {
+            margin-top: 20px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .sidebar a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            backdrop-filter: blur(5px);
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .sidebar a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #00ff1e;
+        }
+
+
+        nav ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .navLogoImage {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        nav a {
+            height: 100%;
+            padding: 0 15px; /* Added padding */
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav h1 {
+            padding: 0 15px; /* Added padding */
+            align-items: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #4CAF50;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        nav a:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        nav li:first-child {
+            margin-right: auto;
+        }
+
+        .div-margin {
+            padding-top: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .row {
+            display: flex;
+            float: left;
+            text-align: left;
+        }
+
+        .column {
+            width: 25%;
+            padding-right: 1.5rem;
+        }
+
+        .rounded-logo {
+            width: 190px;
+            height: 190px;
+            border-radius: 50px;
+            margin-bottom: 4rem; /* Improve spacing between image and heading */
+            border: 2px solid #fff;
+            object-fit: cover;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow to the logo */
+            background-color: black;
+        }
+
+        li {
+            color: white;
+            font-weight: 550;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
         }
 
-        .error-container {
-            text-align: center;
+        .hero h1 {
+            color: white;
+            font-size: 60px;
+            font-weight: 550;
         }
 
-        .error-code {
-            font-size: 6rem;
-            font-weight: 900;
+        .hero-btn {
+            margin-top: 20px;
+            padding: 10px 24px;
+            background-color: #c1c1c1;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 550;
+        }
+
+        .hero-btn:hover {
+            background-color: rgb(0, 0, 0);
+            color: #9eaf9e;
+        }
+
+        .menu-btn {
+            display: none;
+        }
+
+        @media screen and (max-width: 800px) {
+            .hideOnMobile {
+                display: none;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .column {
+                width: 100%;
+            }
+
+            .row {
+                display: block;
+            }
+
+            .hero h1 {
+                color: white;
+                font-size: 55px;
+                text-align: center;
+                align-items: center;
+                padding-bottom: 30px;
+            }
+
+            .main-nav h1 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .sidebar {
+                padding-top: 100px;
+                position: absolute;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.322);
+                backdrop-filter: blur(10px);
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+
+        /* About.css */
+        .aboutUs-Section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            font-size: 18px;
+            transition: box-shadow 0.3s ease-in-out;
+            font-family: 'Arial', sans-serif;
+            animation: slideIn 1s ease-out; /* Added slide-in animation */
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .aboutUs-Image {
+            align-self: center; /* Vertically align image to center */
+        }
+
+        .aboutUs-Image img {
+            max-width: 100%;
+            height: 300px;
+            width: 270px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .aboutUs-Image:hover img {
+            transform: scale(1.04);
+        }
+
+        .aboutUs-Content {
+            text-align: left;
+        }
+
+        .aboutUs-Section h2 {
+            margin-top: 90px;
+            padding-top: 40px;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .aboutUs-Section:hover h2 {
+            padding-top: 40px;
+            color: #4CAF50; /* Change to your desired hover color */
+        }
+
+        .aboutUs-Section p {
+            color: #666;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .aboutUs-Section:hover p {
+            color: #888; /* Change to your desired hover color */
+        }
+
+        .contactUs-Button {
+            display: block;
+            margin: 40px auto;
+            padding: 10px 20px;
+            background-color: #000000; /* Change to your desired button color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .contactUs-Button:hover {
+            background-color: #4CAF50; /* Change to your desired hover button color */
+        }
+
+        @media screen and (max-width: 768px) {
+            .aboutUs-Section {
+                grid-template-columns: 1fr;
+            }
+
+            .aboutUs-Section {
+                display: block;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 10px;
+                padding: 20px;
+                max-width: 1200px;
+                margin: 20px auto;
+                text-align: center;
+            }
+
+            .aboutUs-Section h2,
+            .aboutUs-Section p {
+                text-align: center;
+            }
+
+            .aboutUs-Image img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+                transition: transform 0.3s ease-in-out;
+            }
+        }
+
+
+        /* Values  */
+        .values-and-culture {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .values-and-culture h1 {
+            text-align: center;
+            color: #111311;
+            font-size: 28px;
             margin-bottom: 20px;
         }
 
-        .error-message {
-            font-size: 1.5rem;
-            color: #666;
+        .values-and-culture h1:hover{
+            color: #4CAF50;
         }
+
+        .values-and-cultureInfo {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .values-and-cultureInfo p {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .values-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .values {
+            text-align: center;
+            margin: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* .values:hover {
+            transform: scale(1.05);
+        } */
+
+        .values img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #4CAF50;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .values:hover img {
+            border-color: #ff6600; /* Change to your desired hover color */
+        }
+
+        .product-h3 {
+            margin-top: 10px;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .values:hover .product-h3 {
+            color: #4CAF50;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .values a.learn-more {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .values a.learn-more::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #ff6600; /* Arrow color */
+            transform: rotate(45deg) translateX(50%);
+            transform-origin: left;
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Add responsiveness for small screens */
+        @media screen and (max-width: 768px) {
+            .values-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .values {
+                margin: 20px 0;
+            }
+            .values-and-cultureInfo p {
+                line-height: 1.6;
+                font-size: 15px;
+            }
+        }
+
+        /* Products  */
+
+
+        .ProductService-section {
+            max-width: 1450px;
+            margin: 7px auto;
+            padding: 20px;
+            transition: box-shadow 0.3s ease-in-out;
+            font-family: 'Arial', sans-serif;
+            background-color: white;
+            color: #333;
+        }
+
+        .product-h1 {
+            text-align: center;
+            color: #121312;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .product {
+            text-align: center;
+            margin: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            border-radius: 50px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #4CAF50;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .product:hover img {
+            border-color: #ff6600; /* Change to your desired hover color */
+        }
+
+        .product-h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .product:hover .product-h3 {
+            color: #4CAF50;
+        }
+
+        .ProductDescription {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .ProductDescription p {
+            line-height: 1.6;
+            color: #555; /* Slightly different color for better contrast */
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+            padding: 20px; /* Add some padding for better visual appeal */
+            border-radius: 8px; /* Add rounded corners for a softer look */
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .ProductDescription p:hover {
+            background-color: white; /* Change to a slightly different background color on hover */
+        }
+
+        .swipe-left-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #e0e5e1;
+            color: #000000;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.1s ease-in-out;
+            font-weight: bold;
+        }
+
+        .swipe-left-button:hover {
+            background-color: #000000; /* Change to your desired hover button color */
+            color: #e0e5e1;
+        }
+
+        @media screen and (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product {
+                margin: 20px 0;
+            }
+        }
+
+        /* Modal styles for Menu Image */
+
+        .menu-modal {
+            display: none;
+        }
+
+        .menu-modal-content {
+            background-color: #fefefe;
+            margin: 0 auto;
+            padding: 40px;
+            border: 1px solid #888;
+            border-radius: 10px;
+            position: relative;
+            max-width: 80%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-modal-content.fadeIn {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .menu-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #888;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .menu-close:hover {
+            color: #555;
+        }
+
+        /* Modal styles for Menu Image */
+
+        .menu-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .menu-call-to-book {
+            display: block;
+            text-align: center;
+            padding:  20px;
+            background-color: #d2d6d2;
+            color: #2c2929;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-call-to-book:hover {
+            background-color: #2c2929;
+            color: #d2d6d2;
+            text-decoration: none;
+        }
+
+        /* Responsive styles for Menu Modal */
+        @media screen and (max-width: 768px) {
+            .menu-modal-content {
+                max-width: 90%; /* Adjust the size as needed for smaller screens */
+            }
+        }
+
+
+        /* Marketing  */
+
+        /* marketing.css */
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .marketing-Section {
+            display: block;
+            gap: 30px;
+            text-align: center;
+            padding: 20px;
+            max-width: 100%;
+            margin: 20px auto;
+            font-size: 18px;
+            transition: box-shadow 0.3s ease-in-out;
+            font-family: 'Arial', sans-serif;
+            animation: slideIn 1s ease-out; /* Added slide-in animation */
+        }
+
+        .marketing-Section h1 {
+            text-align: center;
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .marketing-Section img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+        .marketing-Section img:hover {
+            transform: scale(1.1);
+        }
+
+        .marketing-Section .paragraph-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .marketing-Section p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 0;
+            text-align: center;
+        }
+
+        .marketing-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack elements vertically */
+            margin: 20px auto; /* Remove the duplicated margin property */
+            max-width: 800px;
+        }
+
+        .marketing-Section video {
+            width: 350px;
+            height: 350px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        /* Learn css */
+
+        /* learn.css */
+
+        .learn-Section {
+            display: flex; /* Use flex for better responsiveness */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            text-align: center;
+            padding: 20px;
+            max-width: 800px; /* Set a specific max-width for better readability on larger screens */
+            margin: 20px auto;
+            font-size: 20px; /* Slightly larger font size for better readability */
+            transition: box-shadow 0.3s ease-in-out;
+            font-family: 'Arial', sans-serif;
+            animation: slideIn 1s ease-out; /* Added slide-in animation */
+        }
+
+        .learn-Section h2 {
+            color: #333;
+            font-size: 22px;
+            font-weight: 550;
+            margin: 20px;
+        }
+
+        .learn-Section img {
+            max-width: 100%; /* Make images responsive */
+            height: auto;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .learn-Section img:hover {
+            transform: scale(1.04);
+        }
+
+        .learn-Section .paragraph-container {
+            background-color: #f9f9f9; /* Use a slightly off-white background */
+            padding: 20px;
+            border-radius: 12px; /* Increased border-radius for a softer look */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased box-shadow for a subtle lift */
+            margin-top: 20px;
+            text-align: justify; /* Use justified text for a cleaner look */
+        }
+
+        .learn-Section p {
+            color: #666;
+            font-size: 18px; /* Slightly larger font size for better readability */
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .learn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        @media  screen and (max-width: 768px) {
+
+            p{
+                font-size: 15px;
+            }
+            
+        }
+
+        /* Leadership.css */
+
+        /* Base styles for larger screens */
+        .leadership-section {
+            text-align: center;
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .leadership-heading {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .leader img {
+            max-width: 250px;
+            height: 250px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+
+        .leader h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .leader p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .leadership-summary {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Responsive styles for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .leadership-section {
+                width: 80%;
+                margin: 30px auto;
+                padding: 15px;
+            }
+
+            .leadership-heading {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+
+            .leadership-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .leader img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            .leader h2 {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            .leader p {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+
+        /* Contact.css */
+
+        .contactUs-Section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 20px;
+            max-width: 100%;
+            height: 100vh;
+            margin: 20px auto;
+            font-size: 18px;
+            transition: box-shadow 0.3s ease-in-out;
+            font-family: 'Arial', sans-serif;
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .contactUs-Image {
+            align-self: center;
+        }
+
+        .contactUs-Image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contactUs-Content {
+            max-width: 50%;
+            text-align: left;
+            align-self: center;
+        }
+
+
+        .contactUs-Section h2 {
+            margin-top: 10px;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .contactUs-Section:hover h2 {
+            color: #4CAF50;
+        }
+
+        .contactUs-Section h4 {
+            margin-top: 20px;
+            color: #666;
+            transition: color 0.3s ease-in-out;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .contactUs-Section p {
+            margin-top: 30px;
+            color: #666;
+            transition: color 0.3s ease-in-out;
+            max-height: 100%;
+            overflow: hidden;
+        }
+
+        .contactUs-Section:hover p {
+            color: #888;
+        }
+
+        .contact-details {
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .contactUs-Section {
+                grid-template-columns: 1fr;
+                max-width: 100%;
+                margin: 20px auto;
+            }
+
+            .contactUs-Section {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .contactUs-Section h2,
+            .contactUs-Section p {
+                text-align: center;
+            }
+
+            .contactUs-Image img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .contactUs-Content {
+                max-width: 100%;
+            }
+        }
+
+
+        /* footer Styles  */
+        /* Add the following styles to your existing CSS file */
+
+        footer {
+            background-color: #efeded; /* Choose a background color for the footer */
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 40px; /* Adjust the size of social icons as needed */
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+
+
+                
     </style>
 </head>
 <body>
-    <div class="error-container">
-        <div class="error-code">403</div>
-        <div class="error-message">Forbidden - Please contact the developer</div>
+
+    <div class="home">
+        <nav>
+            <ul class="sidebar">
+                <li><a href="#" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" class="close" height="24" viewBox="0 0 512 512" width="24" style="fill: black;"><path d="M503.69 9.37c-18.75-18.74-49.14-18.75-67.88 0L256 188.12 75.19 9.37C56.45-9.37 26.06-9.36 7.31 9.37c-18.75 18.74-18.75 49.14 0 67.88L188.11 256 7.31 436.73c-18.75 18.74-18.75 49.14 0 67.88 9.37 9.37 21.65 14.06 33.94 14.06s24.57-4.69 33.94-14.06L256 323.88 436.81 503.63c9.37 9.37 21.65 14.06 33.94 14.06s24.57-4.69 33.94-14.06c18.75-18.74 18.75-49.14 0-67.88L323.89 256l180.81-180.73c18.74-18.74 18.74-49.15 0-67.88z"/></svg></a></li>
+                <li><a href="#aboutUs">ABOUT US</a></li>
+                <li><a href="#contactUs-part">CONTACT</a></li>
+                <li><a href="#learnMore">MORE INFO</a></li>
+                <li><a href="#leadership">LEADERSHIP TEAM</a></li>
+            </ul>
+    
+            <ul class="main-nav">
+                <li>
+                    <!-- Rounded logo image -->
+                    <img src="/icons/companyLogo.jpg" alt="Casita Express Logo" class="navLogoImage"> CASITA EXPRESS </a>
+                </li>
+                <li><a href="#aboutUs" class="hideOnMobile">ABOUT US</a></li>
+                <li><a href="#contactUs-part" class="hideOnMobile">CONTACT</a></li>
+                <li><a href="#learnMore" class="hideOnMobile">MORE INFO</a></li>
+                <li><a href="#leadership" class="hideOnMobile">LEADERSHIP TEAM</a></li>
+                <li><a href="#" class="menu-btn" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" style="fill: white;"/></svg></a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero" id="home">
+            <!-- Add the logo image -->
+            <img src="/icons/companyLogo.jpg" alt="Soso Unplugged Logo" class="rounded-logo masthead-logo">
+            <h1>A TASTE OF PORTUGUESE</h1>
+            <button class="hero-btn" id="heroBtn" >Learn More</button>
+        </div>
     </div>
+
+    <!-- About Us Section     -->
+    <div id="aboutUs" class="aboutUs-Section">
+        <div class="aboutUs-Image">
+            <img src="/images/aboutusImage.jpg" alt="About Us Image">
+        </div>
+        <div class="aboutUs-Content">
+            <h2>About Us</h2>
+            <br>
+            <p>Casita Express is your gateway to an authentic Portuguese dining experience in the heart of Emmarentia, Johannesburg. Established a couple of years ago, our culinary journey began with a passion for delivering the true essence of Portuguese cuisine. In 2020, we embraced a new identity as Casita Express, carving our niche with a focus on quality and tradition.
+            </p>
+            <br>
+            <button class="contactUs-Button" id="contactUsBtn" >Contact Us</button>
+        </div>
+    </div>
+
+    <div class="ProductService-section">
+        <h1 class="product-h1">Products &amp; services</h1>
+        <div class="product-container">
+            <div class="product">
+                <img src="images/portugueseChicken.jpeg" alt="Portuguese Chicken">
+                <h3 class="product-h3">Portuguese Chicken</h3>
+            </div>
+            <div class="product">
+                <img src="images/prawns.jpeg" alt="Prawns, Hake, and Rissoles">
+                <h3 class="product-h3">Prawns, Hake, and Rissoles</h3>
+            </div>
+            <div class="product">
+                <img src="images/pasteis-de-nata.jpeg" alt="Pasteis de Nata">
+                <h3 class="product-h3">Pasteis de Nata</h3>
+            </div>
+            <div class="product">
+                <img src="images/Twisters.jpeg" alt="Calamari">
+                <h3 class="product-h3">Chips & Twister</h3>
+            </div>
+        </div>
+        <div class=" ProductDescription">
+            <p>
+                Casita Express invites you on a culinary journey with our 
+                authentic Portuguese menu. Indulge in the savory delights of 
+                Portuguese Chicken, Prawns, Hake, and Rissoles. 
+                Treat your sweet tooth to the rich flavors of Pasteis de Nata. 
+                Experience the taste of the sea with our Calamari or savor the convenience 
+                of our Wraps. Additionally, explore the fusion of Portuguese and Italian 
+                influences with our Pizza and Pasta offerings. Each dish is thoughtfully 
+                crafted to deliver an unforgettable dining experience, capturing the 
+                essence of Portugal's culinary traditions.
+            </p>
+        </div>
+        <!-- Swipe Left Button with Arrow -->
+        <button class="swipe-left-button" id="openMenuModal">View Menu &rarr;</button>
+
+        <!-- Menu Modal -->
+        <div id="menuModal" class="menu-modal">
+            <div class="menu-modal-content">
+                <div  class="menu-close" id="closeMenuModal">&times;</div>
+                <img src="images/CasitaExpressManu.png" alt="Menu Image" class="menu-image">
+                <a href="#contactUs-part" class="menu-call-to-book">Call to Book</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="more-amazing-dishes">
+        <div class="carousel-container">
+            <!-- Carousel with Irregular Blob -->
+            <h1 class="more-h1">More Amazing Dishes</h1>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="more-product-container">
+                            <div class="more-product">
+                                <img src="images/burger-meal.jpeg" alt="Portuguese Chicken">
+                                <h3 class="dish-title-small">Burger Meal</h3>
+                            </div>
+                            <div class="more-product">
+                                <img src="images/pizza-meal02.jpeg" alt="Pasteis de Nata">
+                                <h3 class="dish-title-small">Pizza Meal</h3>
+                            </div>
+                            <div class="more-product">
+                                <img src="images/pasta-meal02.jpeg" alt="Pasteis de Nata">
+                                <h3 class="dish-title-small">Pasta Meal</h3>
+                            </div>
+                        </div>
+                        <div class="more-product-container">
+                            <div class="more-product">
+                                <img src="images/chiken-strips-meal.jpeg" alt="Portuguese Chicken">
+                                <h3 class="dish-title-small">Portuguese Chicken Strips Meal</h3>
+                            </div>
+                            <div class="more-product">
+                                <img src="images/hake-meal.jpeg" alt="Prawns, Hake, and Rissoles">
+                                <h3 class="dish-title-small">Hake Meal</h3>
+                            </div>
+                            <div class="more-product">
+                                <img src="images/chips-chicken.jpeg" alt="Prawns, Hake, and Rissoles">
+                                <h3 class="dish-title-small">Chiken ,Prawns and Chips meal</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 - Wraps and Meals -->
+                    <div class="carousel-item">
+                        <div class="more-product-container">
+                            <div class="more-product">
+                                <img src="images/wraps.jpeg" alt="Portuguese Chicken">
+                                <h3 class="dish-title-small">Chicken Wrap</h3>
+                                <p class="dish-description">Grilled chicken wrapped with fresh veggies and sauce</p>
+                            </div>
+                            <div class="more-product">
+                                <img src="images/portugueseChicken.jpeg" alt="Portuguese Chicken">
+                                <h3 class="dish-title-small">Portuguese Grilled Chicken</h3>
+                                <p class="dish-description">Choices between Mild/Hot/Very Hot. Excludes Sides</p>
+                            </div>
+                            <!-- Add more items as needed -->
+                        </div>
+                        <br>
+                        <div class="more-product-container">
+                            <div class="more-product">
+                                <img src="images/family-meal.jpeg" alt="Portuguese Chicken">
+                                <h3 class="dish-title-small">Casita Family Meal</h3>
+                                <p class="dish-description">2 Full Chicken, large Chips & 4 Portuguese Rolls</p>
+                            </div>
+                            <!-- Add more items as needed -->
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <img class="blob" src="images/chicken rosoles.jpeg" alt="Special Dish">
+                        <div class="carousel-caption">
+                            <h3 class="dish-title">Chef's Special Delight</h3>
+                            <p class="dish-description">An exquisite creation that captures the essence of culinary artistry.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add navigation controls if required -->
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Learn More Section -->
+
+    <div id="learnMore" class="learn-Section">
+
+        <div>
+            <h1 class="product-h1">Learn More About Casita Express</h1>
+        </div>
+        <div>
+            <div><img src="images/visionmission.jpeg" alt="Vission and Mission"></div>
+
+        
+        <div class="learn-container">
+            <h2>Vision Statement</h2>
+            <p>Casita Express aims to be the premier destination for authentic Portuguese 
+                cuisine in South Africa..
+            </p>
+            <h2>Mission Statement</h2>
+            <p>At Casita Express, our mission is to deliver an authentic taste of Portugal, weaving flavors, tradition, 
+                and warmth into every dish. We strive to create a memorable dining experience that reflects our 
+                commitment to quality, passion, and the rich tapestry of Portuguese cuisine.</p>
+        </div>
+
+        </div>
+
+        
+    </div>
+
+    <!-- Values and Culture Section -->
+    <div class="values-and-culture">
+        <h1 class="product-h1" >Values and Culture</h1>
+        <div class="values-and-cultureInfo">
+            <p>
+                At Casita Express, our foundation is built upon a set of core 
+                values that guide our every endeavor and shape the vibrant 
+                organizational culture we cherish:
+            </p>
+        </div>
+        <div class="values-container">
+            <div class="values">
+                <img src="images/authenticity.jpeg" alt="Portuguese Chicken">
+                <h3 class="product-h3">Authenticity</h3>
+                <a href="#" class="learn-more" data-modal-target="#authenticity-modal">Learn More</a>
+            </div>
+            <div class="values">
+                <img src="images/exellance.jpeg" alt="Prawns, Hake, and Rissoles">
+                <h3 class="product-h3">Excellence</h3>
+                <a href="#" class="learn-more" data-modal-target="#excellence-modal">Learn More</a>
+            </div>
+            <div class="values">
+                <img src="images/Inclusivity.jpeg" alt="Pasteis de Nata">
+                <h3 class="product-h3">Inclusivity</h3>
+                <a href="#" class="learn-more" data-modal-target="#inclusivity-modal">Learn More</a>
+            </div>
+            <div class="values">
+                <img src="images/Sustainability.jpeg" alt="Calamari">
+                <h3 class="product-h3">Sustainability</h3>
+                <a href="#" class="learn-more" data-modal-target="#sustainability-modal">Learn More</a>
+            </div>
+            <div class="values">
+                <img src="images/Passion.jpeg" alt="Calamari">
+                <h3 class="product-h3">Passion</h3>
+                <a href="#" class="learn-more" data-modal-target="#passion-modal">Learn More</a>
+            </div>
+        </div>
+    
+        <!-- Modals -->
+        <div id="authenticity-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Authenticity</h2>
+                <p>We are committed to delivering an authentic taste of Portugal, from our culinary creations to the warm hospitality extended to our patrons.</p>
+            </div>
+        </div>
+    
+        <div id="excellence-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Excellence</h2>
+                <p>Striving for excellence is ingrained in our ethos. From sourcing the finest ingredients to crafting each dish, we uphold the highest standards in everything we do.</p>
+            </div>
+        </div>
+    
+        <div id="inclusivity-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Inclusivity</h2>
+                <p>Casita Express is a melting pot of cultures, welcoming guests from all walks of life. We embrace diversity, fostering an inclusive environment where everyone feels at home.</p>
+            </div>
+        </div>
+    
+        <div id="sustainability-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Sustainability</h2>
+                <p>Mindful of our impact, we actively pursue sustainable practices, from sourcing locally to minimizing our environmental footprint, contributing to a healthier planet.</p>
+            </div>
+        </div>
+    
+        <div id="passion-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Passion</h2>
+                <p>The passion for Portuguese cuisine drives us. It's the secret ingredient that infuses every dish with love and dedication, creating an unforgettable dining experience.</p>
+            </div>
+        </div>
+    
+
+        <div class="values-and-cultureInfo">
+            <p>
+                Our organizational culture is a celebration of 
+                these values, creating a collaborative and empowering 
+                atmosphere where our team is encouraged to innovate, 
+                learn, and grow. Casita Express is more than a 
+                restaurant; it's a culinary journey where our values 
+                and culture come together to create an extraordinary 
+                dining experience.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Leadership Team Section -->
+
+    <!-- <div id="leadership" class="leadership-section">
+        <h1 class="leadership-heading">Meet Our Leadership Team</h1>
+        
+        <div class="leadership-grid">
+            <div class="leader">
+                <img src="https://placehold.co/600x400" alt="Muhammad Omar">
+                <h2>Muhammad Omar - Owner</h2>
+                <p>
+                    As the visionary founder and owner of Casita Express, Muhammad Omar brings a wealth of passion for authentic Portuguese cuisine. His dedication to delivering a memorable dining experience is reflected in every aspect of Casita Express. Muhammad's commitment to quality, innovation, and customer satisfaction has been instrumental in shaping Casita Express.
+                </p>
+            </div>
+
+            <div class="leader">
+                <img src="https://placehold.co/600x400" alt="Sam">
+                <h2>Sam - Restaurant Manager</h2>
+                <p>
+                    At the helm of operations, Sam, our seasoned Restaurant Manager, ensures the seamless day-to-day functioning of Casita Express. With a keen eye for detail and a deep understanding of the hospitality industry, Sam leads our dynamic team to deliver exceptional service. His commitment to maintaining the highest standards in customer experience and operational efficiency makes him an integral part of the Casita Express family.
+                </p>
+            </div>
+        </div>
+        
+        <div class="leadership-summary">
+            <p>
+                Together, Muhammad and Sam form the leadership backbone of Casita Express, steering the restaurant towards continued success and culinary excellence.
+            </p>
+        </div>
+    </div> -->
+    
+    <!-- Marketing Section -->
+
+    <div class="marketing-Section">
+        <div>
+            <h1>Digital Presence & Marketing</h1>
+        </div>
+        <div>
+            <video src="images/digitalPresents.mp4" alt="Chicken Wings" loop muted autoplay controls>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+
+        <div class="paragraph-container">
+            <p>Casita Express embraces a dynamic digital presence to connect with our patrons and share the 
+                essence of our culinary offerings. Follow us on Instagram (<a href="https://www.instagram.com/casita_express_jhb/" target="_blank">@casita_express_jhb</a>) for a visual feast 
+                of our delicious dishes, special promotions, and behind-the-scenes moments. Additionally, our 
+                strategic presence on Google ensures that you easily discover us when searching for an authentic 
+                Portuguese dining experience. Engage with our local community through targeted advertisements 
+                on relevant WhatsApp groups, where we share updates, exclusive deals, and invite everyone 
+                to savor the flavors of Portugal at Casita Express.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Contact Us Section -->
+    <div id="contactUs-part" class="contactUs-Section">
+        <div class="contactUs-Image">
+            <img src="/images/contact.jpg" alt="Contact Us Image">
+        </div>
+        <div class="contactUs-Content">
+            <h2>Contact Us</h2>
+            <h4>Feel free to get in touch with us for any inquiries or reservations. Our team is ready to assist you!</h4>
+            <div class="contact-details">
+                <p><strong>Phone: </strong><a href="tel:+27744487860">+27744487860</a></p>
+                <p><strong>Address: </strong>38 Greenhill road, Emmarentia, Johannesburg</p>
+                <p><strong>Email: </strong><a href="mailto:Info@casitaexpress.com">Info@casitaexpress.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/p/Casita-Express-100076044339647/?_rdc=1&_rdr" target="_blank"><img src="icons/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.mrdfood.com/food-delivery/restaurant/casita-express-emmarentia-emmarentia/21504" target="_blank"><img src="icons/mrD-icon.png" alt="mrD"></a>
+            <a href="https://www.instagram.com/casita_express_jhb/" target="_blank"><img src="icons/instagram-icon.jpeg" alt="Instagram"></a>
+            <!-- Add more social icons as needed -->
+        </div>
+        <div class="copyright">
+            <p><strong>All rights reserved &copy;  Casita Express 2024. </strong></p>
+        </div>
+    </footer>
+    
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
